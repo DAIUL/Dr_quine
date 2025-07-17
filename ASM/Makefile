@@ -6,9 +6,9 @@ SULLY	:= Sully
 
 # ========== Standard ========== #
 NASM	:= nasm
-FLAGS	:= -f macho64
-LD		:= ld
-LDFLAGS	:= -macosx_version_min 10.8 -lSystem
+FLAGS	:= -f elf64
+LD		:= gcc -no-pie
+LDFLAGS	:= 
 # ============================== #
 
 # =========== Files ============ #
